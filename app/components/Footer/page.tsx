@@ -174,7 +174,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="lg:-mt-72 -mt-72">
+      <div className="lg:-mt-72">
         <Footer />
       </div>
     </footer>

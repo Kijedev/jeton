@@ -5,7 +5,7 @@ import { cn } from "@/app/lib/utils";
 export function page() {
   return (
     <div
-      className="h-screen mt-20 flex items-center justify-center w-full"
+      className="h-screen flex items-center justify-center w-full"
       style={{
         background: 'url("/Image/client.jpg")',
         backgroundSize: "cover",
@@ -17,7 +17,6 @@ export function page() {
   );
 }
 
-// Small utility to highlight the content of specific section of a testimonial content
 export const Highlight = ({
   children,
   className,

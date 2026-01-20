@@ -9,6 +9,7 @@ import Parallax from "../Parallax/page";
 import Account from "../Account/page";
 import Contactless from "../Contactless/page";
 import Users from "../Users/page";
+import DraggableCard from "@/app/components/DraggableCard/page";
 import CardStack from "../../components/CardStack/page";
 import Footer from "@/app/components/Footer/page";
 
@@ -91,6 +92,7 @@ export default function Page() {
       <Parallax />
       <Account />
       <Contactless />
+      <DraggableCard />
       <CardStack />
       <Users />
       <Footer />
