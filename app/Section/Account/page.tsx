@@ -1,0 +1,68 @@
+"use client";
+
+import Image from "next/image";
+import { FaApple, FaGooglePlay } from "react-icons/fa";
+import Link from "next/link";
+
+export default function Hero() {
+  return (
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/video/accountbg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Content */}
+      <div className="relative z-10 h-full max-w-8xl mx-auto px-6 flex items-center lg:ml-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+          {/* Left Content */}
+          <div className="text-white space-y-6">
+            <h1 className="text-4xl md:text-7xl font-bold leading-tight">
+              All your finances,
+              <br />
+              in one app.
+            </h1>
+
+            <p className="text-lg text-white/80">Join 1M+ happy users today.</p>
+
+            <button className="bg-white text-[#f73b20] px-6 py-3 rounded-xl font-medium hover:scale-105 transition">
+              Get Started
+            </button>
+
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-32">
+              {/* APP STORE */}
+              <Link
+                href=""
+                className="border border-white rounded-xl px-3 py-1 flex gap-2 items-center justify-center"
+              >
+                <FaApple className="h-8 w-8" />
+                <span>
+                  <p className="text-[10px]">Download on</p>
+                  <h1 className="text-lg -mt-1">App Store</h1>
+                </span>
+              </Link>
+
+              {/* GOOGLE PLAY */}
+              <Link
+                href=""
+                className="border border-white rounded-xl px-3 py-1 flex gap-2 items-center justify-center"
+              >
+                <FaGooglePlay className="h-6 w-6" />
+                <span>
+                  <p className="text-[10px]">Get it on</p>
+                  <h1 className="text-lg -mt-1">Google Play</h1>
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
