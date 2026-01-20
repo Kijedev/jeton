@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main
       ref={mainRef}
-      className={`min-h-screen mt-32 flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300 ${
+      className={`min-h-screen flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300 ${
         isInView ? "bg-[#f73b20]" : "bg-white"
       }`}
     >

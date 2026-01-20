@@ -8,7 +8,8 @@ import Finances from "../Finances/page";
 import Parallax from "../Parallax/page";
 import Account from "../Account/page";
 import Contactless from "../Contactless/page";
-import Users from "../Users/page"
+import Users from "../Users/page";
+import CardStack from "../../components/CardStack/page";
 import Footer from "@/app/components/Footer/page";
 
 export const metadata: Metadata = {
@@ -90,6 +91,7 @@ export default function Page() {
       <Parallax />
       <Account />
       <Contactless />
+      <CardStack />
       <Users />
       <Footer />
     </div>
