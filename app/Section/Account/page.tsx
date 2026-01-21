@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import Link from "next/link";
+import Button from "@/app/components/ui/Button/page";
 
 export default function Hero() {
   return (
@@ -31,9 +32,13 @@ export default function Hero() {
 
             <p className="text-lg text-white/80">Join 1M+ happy users today.</p>
 
-            <button className="bg-white text-[#f73b20] px-6 py-3 rounded-xl font-medium hover:scale-105 transition">
-              Get Started
-            </button>
+            <Button
+              text="Get Started"
+              fromColor="from-white"
+              toColor="to-white"
+              textColor="text-[#f73b20]"
+              border="border border-white"
+            />
 
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-32">
               {/* APP STORE */}

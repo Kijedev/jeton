@@ -69,8 +69,8 @@ export default function Page() {
         ref={scrollRef}
         className="h-full w-full overflow-y-scroll flex items-center justify-center"
       >
-        <div className="min-h-[170vh] flex items-center justify-center">
-          <div className="flex flex-col items-center pt-80 gap-0 text-center">
+        <div className="min-h-[180vh] flex items-center justify-center">
+          <div className="flex flex-col items-center pt-60 gap-0 text-center">
             <motion.h1
               style={{ y: yAdd, opacity: oAdd }}
               className="text-6xl md:text-[8rem] font-semibold text-[#34C771] flex items-center gap-4"

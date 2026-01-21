@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "",
-  description: "",
-};
+import Button from "@/app/components/ui/Button/page";
 
 export default function page() {
   return (
@@ -34,9 +30,13 @@ export default function page() {
             Jeton Card: Your Go-To for Every Purchase
           </h1>
           <div className="flex justify-center items-center mt-10">
-            <button className="bg-[#f73b20] text-white rounded-xl p-4 mt-10 cursor-pointer">
-              Learn more
-            </button>
+            <Button
+              text="Learn more"
+              fromColor="from-[#f73b20]"
+              toColor="to-[#f73b20]"
+              textColor="text-white"
+              border="border border-white"
+            />
           </div>{" "}
         </div>
       </div>

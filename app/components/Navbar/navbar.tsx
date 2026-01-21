@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Button from "@/app/components/ui/Button/page";
 
 export const metadata: Metadata = {
   title: "",
@@ -16,17 +17,29 @@ export default function Navbar() {
 
         {/* ACTIONS */}
         <div className="flex items-center gap-2 sm:gap-4 lg:gap-10">
-          <button className="border border-white text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-sm sm:text-base">
-            EN
-          </button>
+          <Button
+            text="EN"
+            fromColor="from-transparent"
+            toColor="to-transparent"
+            textColor="text-white"
+            border="border border-red-600"
+          />
 
-          <button className="border border-white text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-sm sm:text-base">
-            Log in
-          </button>
+          <Button
+            text="Log in"
+            fromColor="from-transparent"
+            toColor="to-transparent"
+            textColor="text-white"
+            border="border border-white"
+          />
 
-          <button className="bg-white text-red-500 rounded-xl px-3 sm:px-4 py-1.5 sm:py-2 text-sm sm:text-base">
-            Sign up
-          </button>
+          <Button
+            text="Sign up"
+            fromColor="from-white"
+            toColor="to-white"
+            textColor="text-[#f73b20]"
+            border="border border-white"
+          />
         </div>
       </nav>
     </main>

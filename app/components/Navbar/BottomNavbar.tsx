@@ -6,15 +6,18 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { BiHomeAlt2 } from "react-icons/bi";
+// import Carte from "@/app/Navigation/Personal/Carte";
 
 const personalLinks = [
   {
     title: "Carte Jeton",
+    href: "/Carte",
     image:
       "https://images.unsplash.com/photo-1616077167599-cad3639f9cbd?q=80&w=800",
   },
   {
     title: "Fees",
+    href: "/personal/fees",
     image:
       "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=800",
   },
@@ -22,14 +25,34 @@ const personalLinks = [
 
 const companyLinks = [
   {
-    title: "About Us",
+    title: "About",
+    href: "/company/about",
     image:
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800",
   },
   {
-    title: "Careers",
+    title: "Newsroom",
+    href: "/company/newsroom",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800",
+  },
+  {
+    title: "Partnerships",
+    href: "/company/partnerships",
+    image:
+      "https://images.unsplash.com/photo-1616077167599-cad3639f9cbd?q=80&w=800",
+  },
+  {
+    title: "Media Assets",
+    href: "/company/media-assets",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800",
+  },
+  {
+    title: "Release Notes",
+    href: "/company/release-notes",
+    image:
+      "https://images.unsplash.com/photo-1616077167599-cad3639f9cbd?q=80&w=800",
   },
 ];
 
@@ -71,16 +94,16 @@ export default function Navbar() {
               <div className="flex justify-between px-3 py-2 gap-5">
                 <div className="flex flex-col gap-1">
                   {links.map((item, index) => (
-                    <motion.div
+                    <Link
+                      href={item.href}
                       key={item.title}
                       onMouseEnter={() => setActiveIndex(index)}
-                      whileHover={{ x: 6 }}
                       className="cursor-pointer"
                     >
-                      <p className="text-lg font-semibold text-gray-300 hover:text-white">
+                      <p className="text-lg text-white/40 hover:text-white">
                         {item.title}
                       </p>
-                    </motion.div>
+                    </Link>
                   ))}
                 </div>
 
@@ -111,10 +134,7 @@ export default function Navbar() {
         </AnimatePresence>
 
         <div className="flex items-center gap-10">
-          <Link
-            href="/"
-            className="text-xl cursor-pointer"
-          >
+          <Link href="/" className="text-xl cursor-pointer">
             <BiHomeAlt2 />
           </Link>
 
