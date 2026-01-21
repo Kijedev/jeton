@@ -14,7 +14,7 @@ export default function Preloader({ onFinish }: { onFinish?: () => void }) {
     const timer = setTimeout(() => {
       setShow(false);
       onFinish?.();
-    }, 1500);
+    }, 1300);
 
     return () => clearTimeout(timer);
   }, [pathname, onFinish]);
@@ -32,7 +32,7 @@ export default function Preloader({ onFinish }: { onFinish?: () => void }) {
             ease: [0.19, 1, 0.22, 1],
           }}
         >
-            <h1 className="text-7xl text-white font-bold">Jeton</h1>
+            <h1 className="text-8xl text-white font-bold goldman">Jeton</h1>
         </motion.div>
       )}
     </AnimatePresence>

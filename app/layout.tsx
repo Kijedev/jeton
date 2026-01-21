@@ -1,28 +1,22 @@
-"use client";
-
-import { useState } from "react";
-import Preloader from "@/app/components/Preloader/page";
+import type { Metadata } from "next";
 import "./globals.css";
+import '@fontsource/goldman';
+import ClientLayout from "@/app/components/ClientLayout";
+
+export const metadata: Metadata = {
+  title: "Jeton",
+  description: "Fast & Secure payments",
+};
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [ready, setReady] = useState(false);
-
   return (
     <html lang="en">
       <body>
-        <Preloader onFinish={() => setReady(true)} />
-
-        <main
-          className={`transition-opacity duration-300 ${
-            ready ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-        >
-          {children}
-        </main>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

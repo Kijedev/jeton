@@ -5,13 +5,14 @@ import { cn } from "@/app/lib/utils";
 export function page() {
   return (
     <div
-      className="h-screen flex items-center justify-center w-full"
+      className="h-screen flex flex-col items-center justify-center w-full gap-20"
       style={{
         background: 'url("/Image/client.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
+      <h1 className="text-white font-bold lg:text-8xl text-center">Hear it from our clients</h1>
       <CardStack items={CARDS} />
     </div>
   );

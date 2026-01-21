@@ -46,7 +46,7 @@ export default function Page() {
           <Navbar />
 
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-32 lg:mt-80 gap-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-semibold text-center lg:text-left">
               One app <br className="hidden lg:block" /> for all needs
             </h1>
 
@@ -112,17 +112,17 @@ export default function Page() {
         ["stack", <CardStack />],
         ["users", <Users />],
       ].map(([id, Component]) => (
-        <motion.section
+        <section
           key={id as string}
-          id={id as string}
+          // id={id as string}
           className="min-h-screen"
-          variants={sectionVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          // variants={sectionVariant}
+          // initial="hidden"
+          // whileInView="visible"
+          // viewport={{ once: true, amount: 0.3 }}
         >
           {Component}
-        </motion.section>
+        </section>
       ))}
 
       <Footer />

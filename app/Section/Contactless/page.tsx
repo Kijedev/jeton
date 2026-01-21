@@ -4,7 +4,7 @@ import Button from "@/app/components/ui/Button/page";
 export default function page() {
   return (
     <div className="bg-white">
-      <div className="flex flex-col gap-6 justify-center items-center pt-10">
+      <div className="flex flex-col gap-6 justify-center items-center pt-32">
         <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full">
           Jeton Card
         </p>

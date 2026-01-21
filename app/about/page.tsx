@@ -38,7 +38,7 @@ export default function Page() {
           <Navbar />
 
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-32 lg:mt-80 gap-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-semibold text-center lg:text-left">
               Your money, <br className="hidden lg:block" /> Your way.
             </h1>
 

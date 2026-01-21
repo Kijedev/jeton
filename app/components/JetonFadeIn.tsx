@@ -7,7 +7,7 @@ const text = "Jeton";
 export default function AnimatedTitle() {
   return (
     <motion.h1
-      className="text-[#f73b20] lg:text-[35rem] text-[8rem] lg:mt-0 -mt-32 font-bold flex"
+      className="text-[#f73b20] lg:text-[28rem] text-[8rem] lg:mt-0 -mt-32 font-bold flex"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.6 }}
@@ -23,7 +23,7 @@ export default function AnimatedTitle() {
       {text.split("").map((letter, index) => (
         <motion.span
           key={index}
-          className="inline-block"
+          className="inline-block goldman"
           variants={{
             hidden: {
               opacity: 0,

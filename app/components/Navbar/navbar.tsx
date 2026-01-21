@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Button from "@/app/components/ui/Button/page";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "",
@@ -11,9 +12,12 @@ export default function Navbar() {
     <main>
       <nav className="flex items-center justify-between px-4 mt-10 lg:px-5">
         {/* LOGO */}
-        <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold">
+        <Link
+          href="/"
+          className="text-white text-2xl sm:text-3xl lg:text-5xl font-bold goldman"
+        >
           Jeton
-        </h1>
+        </Link>
 
         {/* ACTIONS */}
         <div className="flex items-center gap-2 sm:gap-4 lg:gap-10">
