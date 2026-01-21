@@ -12,7 +12,7 @@ export default function Button({
         bg-linear-to-b ${fromColor} ${toColor}
         px-6 py-3 rounded-xl
         border border-white/20
-        font-medium group z-50
+        font-medium group z-50 w-fit
         ${textColor}
       `}
     >

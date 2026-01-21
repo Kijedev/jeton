@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { BiHomeAlt2 } from "react-icons/bi";
+import { navigate } from "next/dist/client/components/segment-cache/navigation";
 // import Carte from "@/app/Navigation/Personal/Carte";
 
 const personalLinks = [
@@ -26,7 +27,7 @@ const personalLinks = [
 const companyLinks = [
   {
     title: "About",
-    href: "/company/about",
+    href: "/about",
     image:
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800",
   },
@@ -63,6 +64,10 @@ export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
 
   const links = openMenu === "company" ? companyLinks : personalLinks;
+
+  const handleBusinessNavigate = () => {
+    window.open("https://www.jetonbank.com/", "_blank");
+  };
 
   useEffect(() => {
     if (navbarRef.current) {
@@ -155,6 +160,7 @@ export default function Navbar() {
 
           <motion.button
             whileHover={{ scale: 1.05 }}
+            onClick={handleBusinessNavigate}
             className="flex items-center gap-1 cursor-pointer"
           >
             Business <span>↗</span>
