@@ -139,10 +139,10 @@ export default function Page() {
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Jeton Card
           </p>
-          <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-[600] leading-18">
+          <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-semibold leading-18">
             Jeton Card, all <br /> your spendings <br /> under control.
           </h1>
-          <p className="text-[#f73b20] text-xl font-[600]">
+          <p className="text-[#f73b20] text-xl font-semibold">
             Safely shop online, buy in stores, or tap into the power of <br />{" "}
             virtual cards with Jeton. Freeze and unfreeze your card <br />{" "}
             anytime within the Jeton app, and enjoy better payments <br />{" "}
@@ -168,10 +168,10 @@ export default function Page() {
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Wallets
           </p>
-          <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-[600] leading-18">
+          <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-semibold leading-18">
             Pay-on-the-go
           </h1>
-          <p className="text-[#f73b20] text-xl font-[600]">
+          <p className="text-[#f73b20] text-xl font-semiboold">
             Make contactless payments in stores with Jeton <br /> Card. Easily
             link your card with your digital wallet. <br /> Tap, pay and speed
             through checkouts!
@@ -193,7 +193,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* LEFT CONTENT */}
           <div>
-            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-[600] leading-tight max-w-4xl">
+            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold leading-tight max-w-4xl">
               Faster, smoother payments: Jeton Card integrates Apple Pay and
               Google Pay
             </h1>
@@ -247,7 +247,7 @@ export default function Page() {
       </section>
 
       <div className="pt-10 pb-20">
-        <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-[600] leading-tight max-w-4xl float-right mr-20">
+        <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold leading-tight max-w-4xl float-right mr-20">
           Paying made effortless with <br /> the devices you carry daily
         </h1>
       </div>

@@ -130,8 +130,8 @@ export default function page() {
         </div>
       </div>
 
-      {items.map((item) => (
-        <DraggableCardBody className={item.className}>
+      {items.map((item, index) => (
+        <DraggableCardBody key={index} className={item.className}>
           <img
             src={item.image}
             alt={item.title}
