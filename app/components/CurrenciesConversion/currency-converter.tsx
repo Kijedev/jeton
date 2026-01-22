@@ -19,6 +19,8 @@ const EXCHANGE_RATES: Record<string, number> = {
   'CHF-EUR': 1.053,
   'USD-JPY': 155.3,
   'JPY-USD': 0.0064,
+  'NGN-USD': 1400,
+  'USD-NGN': 1/1400,
 };
 
 export default function CurrencyConverter() {

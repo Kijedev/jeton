@@ -18,6 +18,7 @@ export const CURRENCIES: Currency[] = [
   { code: 'INR', name: 'Indian Rupee', flag: '🇮🇳', symbol: '₹' },
   { code: 'SEK', name: 'Swedish Krona', flag: '🇸🇪', symbol: 'kr' },
   { code: 'SGD', name: 'Singapore Dollar', flag: '🇸🇬', symbol: '$' },
+  { code: 'NGN', name: 'Nigerian Naira', flag: '🇳🇬', symbol: '₦' },
 ];
 
 export const EXCHANGE_RATES: Record<string, number> = {
@@ -47,6 +48,8 @@ export const EXCHANGE_RATES: Record<string, number> = {
   'SEK-EUR': 0.088,
   'USD-SGD': 1.33,
   'SGD-USD': 0.752,
+  'NGN-USD': 0.000714,
+  'USD-NGN': 1421,
 };
 
 // Default rate for unsupported pairs (simplified)

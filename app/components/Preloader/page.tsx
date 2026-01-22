@@ -14,7 +14,7 @@ export default function Preloader({ onFinish }: { onFinish?: () => void }) {
     const timer = setTimeout(() => {
       setShow(false);
       onFinish?.();
-    }, 1300);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [pathname, onFinish]);

@@ -31,16 +31,12 @@ export default function Home() {
   return (
     <main
       ref={mainRef}
-      className={`min-h-screen flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300 ${
-        isInView ? "bg-[#f73b20]" : "bg-white"
-      }`}
+      className={`min-h-screen flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300`}
     >
       {/* Hero Content */}
       <div className="text-center max-w-6xl">
         <h1
-          className={`text-6xl md:text-[10rem] font-bold leading-36 mb-6 transition-colors duration-300 ${
-            isInView ? "text-white" : "text-[#f73b20]"
-          }`}
+          className={`text-6xl md:text-[10rem] font-bold leading-36 mb-6 transition-colors duration-300`}
         >
           1 million users,
           <br />
@@ -48,9 +44,7 @@ export default function Home() {
         </h1>
 
         <p
-          className={`text-xl md:text-2xl mb-12 transition-colors duration-300 ${
-            isInView ? "text-white" : "text-[#f73b20]"
-          }`}
+          className={`text-xl md:text-2xl mb-12 transition-colors duration-300`}
         >
           It only takes few seconds to get started.
         </p>

@@ -142,7 +142,7 @@ export default function Page() {
           <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-semibold leading-18">
             Jeton Card, all <br /> your spendings <br /> under control.
           </h1>
-          <p className="text-[#f73b20] text-xl font-semibold">
+          <p className="text-[#f73b20] text-2xl font-semibold leading-7">
             Safely shop online, buy in stores, or tap into the power of <br />{" "}
             virtual cards with Jeton. Freeze and unfreeze your card <br />{" "}
             anytime within the Jeton app, and enjoy better payments <br />{" "}
@@ -164,14 +164,14 @@ export default function Page() {
       </div>
 
       <div className="bg-white mt-0">
-        <div className="lg:px-32 pt-48 space-y-8 pb-20">
+        <div className="lg:px-12 pt-48 space-y-8 pb-20">
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Wallets
           </p>
           <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-semibold leading-18">
             Pay-on-the-go
           </h1>
-          <p className="text-[#f73b20] text-xl font-semiboold">
+          <p className="text-[#f73b20] text-2xl font-semibold leading-7">
             Make contactless payments in stores with Jeton <br /> Card. Easily
             link your card with your digital wallet. <br /> Tap, pay and speed
             through checkouts!
@@ -190,10 +190,9 @@ export default function Page() {
       </div>
 
       <section className="relative bg-white px-6 md:px-16 py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* LEFT CONTENT */}
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold leading-tight max-w-4xl">
+            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold leading-14 max-w-4xl">
               Faster, smoother payments: Jeton Card integrates Apple Pay and
               Google Pay
             </h1>
@@ -259,7 +258,7 @@ export default function Page() {
             <div className="flex items-center gap-6">
               <span className="text-3xl group-open:hidden">+</span>
               <span className="text-3xl hidden group-open:block">−</span>
-              <h3 className="text-3xl md:text-4xl font-semibold">
+              <h3 className="text-3xl lg:ml-20 md:text-4xl font-semibold">
                 Smart Phone
               </h3>
             </div>
@@ -295,7 +294,7 @@ export default function Page() {
             <div className="flex items-center gap-6">
               <span className="text-3xl group-open:hidden">+</span>
               <span className="text-3xl hidden group-open:block">−</span>
-              <h3 className="text-3xl md:text-4xl font-semibold">
+              <h3 className="text-3xl lg:ml-20 md:text-4xl font-semibold">
                 Smart Watch
               </h3>
             </div>
@@ -331,7 +330,7 @@ export default function Page() {
             <div className="flex items-center gap-6">
               <span className="text-3xl group-open:hidden">+</span>
               <span className="text-3xl hidden group-open:block">−</span>
-              <h3 className="text-3xl md:text-4xl font-semibold">
+              <h3 className="text-3xl lg:ml-20 md:text-4xl font-semibold">
                 Tablet / Computer
               </h3>
             </div>
