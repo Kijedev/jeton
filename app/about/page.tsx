@@ -11,8 +11,8 @@ import { CgScrollV } from "react-icons/cg";
 import { motion, Variants } from "framer-motion";
 import Financial from "@/app/Section/FinancialFuture/page";
 import Awards from "../Section/Awards/page";
+import Support from "../components/Support";
 
-/* ✅ TYPE-SAFE VARIANTS */
 const sectionVariant: Variants = {
   hidden: { opacity: 0, y: 80 },
   visible: {
@@ -79,6 +79,7 @@ export default function Page() {
       </div>
 
       <BottomNavbar />
+      <Support />
 
       <div className="bg-white mt-0">
         <div className="lg:px-32 px-2 pt-48 lg:space-y-8 pb-20">

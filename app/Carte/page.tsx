@@ -8,6 +8,7 @@ import Footer from "@/app/components/Footer/page";
 import { CgScrollV } from "react-icons/cg";
 import Button from "@/app/components/ui/Button/page";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
+import Support from "../components/Support";
 
 export default function Page() {
   return (
@@ -361,7 +362,7 @@ export default function Page() {
           </div>
         </details>
       </section>
-
+      <Support />
       <BottomNavbar />
       <Footer />
     </div>

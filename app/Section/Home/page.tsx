@@ -4,7 +4,7 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar/navbar";
 import BottomNavbar from "../../components/Navbar/BottomNavbar";
 import Footer from "@/app/components/Footer/page";
-
+import Support from "@/app/components/Support";
 import Finances from "../Finances/page";
 import Parallax from "../Parallax/page";
 import Account from "../Account/page";
@@ -67,7 +67,7 @@ export default function Page() {
                     <h1 className="text-lg -mt-1">App Store</h1>
                   </span>
                 </Link>
-                
+
                 <Link
                   href=""
                   className="border border-white rounded-xl px-3 py-1 flex gap-2 items-center justify-center"
@@ -97,10 +97,12 @@ export default function Page() {
             <CgScrollV />
             <p className="text-sm">Scroll</p>
           </div>
+          <Support />
         </div>
       </div>
 
       <BottomNavbar />
+      
 
       {/* SECTIONS */}
       {[

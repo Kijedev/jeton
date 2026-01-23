@@ -190,7 +190,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="md:hidden fixed bottom-10 left-20 -translate-x-1/2 z-999">
+      <div className="md:hidden fixed bottom-0 left-20 -translate-x-1/2 z-999">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
