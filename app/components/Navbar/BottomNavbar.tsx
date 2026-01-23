@@ -11,7 +11,7 @@ import { navigate } from "next/dist/client/components/segment-cache/navigation";
 
 const personalLinks = [
   {
-    title: "Carte Jeton",
+    title: "Jeton Card",
     href: "/Carte",
     image:
       "https://images.unsplash.com/photo-1616077167599-cad3639f9cbd?q=80&w=800",

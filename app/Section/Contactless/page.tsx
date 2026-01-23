@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Button from "@/app/components/ui/Button/page";
+import { AnimatePresence } from "framer-motion";
 
 export default function page() {
   return (
@@ -12,18 +13,20 @@ export default function page() {
           Contactless payments? Sure. Spending limits? Check. Card freezing?
           Also check.
         </h1>
-
-        <div className="mt-20 flex justify-center">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="rounded-4xl w-[50%] object-cover"
-          >
-            <source src="/video/jeton.mp4" type="video/mp4" />
-          </video>
-        </div>
+        
+        <AnimatePresence>
+          <div className="mt-20 flex justify-center">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-4xl w-[50%] object-cover"
+            >
+              <source src="/video/jeton.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </AnimatePresence>
 
         <div>
           <h1 className="text-[#f73b20] text-7xl text-center font-semibold leading-18 mt-20 max-w-3xl mx-auto">

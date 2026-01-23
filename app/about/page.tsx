@@ -9,7 +9,8 @@ import Image from "next/image";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import { CgScrollV } from "react-icons/cg";
 import { motion, Variants } from "framer-motion";
-import ParallaxScroll from "../components/ParallaxScroll";
+import Financial from "@/app/Section/FinancialFuture/page";
+import Awards from "../Section/Awards/page";
 
 /* ✅ TYPE-SAFE VARIANTS */
 const sectionVariant: Variants = {
@@ -88,7 +89,9 @@ export default function Page() {
             Money, but better.
           </h1>
           <p className="text-[#f73b20] text-2xl font-semibold leading-7">
-            Our goal is to make money better. Whether you’re <br /> opening an account with us, sending or receiving <br /> money, we make it better for you.
+            Our goal is to make money better. Whether you’re <br /> opening an
+            account with us, sending or receiving <br /> money, we make it
+            better for you.
           </p>
         </div>
 
@@ -114,7 +117,10 @@ export default function Page() {
           {/* RIGHT CONTENT */}
           <div className="flex flex-col gap-6 text-[#ff3b1f] max-w-lg">
             <p>
-              No hidden fees, complicated words or complex processes. We make <br /> money relatable, effortless, easy to understand and manage. Our goal <br /> for each of our users to manage their money with a few taps.
+              No hidden fees, complicated words or complex processes. We make{" "}
+              <br /> money relatable, effortless, easy to understand and manage.
+              Our goal <br /> for each of our users to manage their money with a
+              few taps.
             </p>
           </div>
         </div>
@@ -133,15 +139,25 @@ export default function Page() {
 
       <section className="bg-[#f73b20]">
         <div className="lg:px-32 pt-48 space-y-8 pb-20 text-center flex flex-col items-center justify-center">
-          <Image src="/Image/phone.png" alt="Jeton" width={150} height={150} className="" />
+          <Image
+            src="/Image/phone.png"
+            alt="Jeton"
+            width={150}
+            height={150}
+            className=""
+          />
           <p className="text-[#ffffff] border border-[#ffffff] px-2 py-1 rounded-full inline-flex">
             Product
           </p>
-          <h1 className="text-[#ffffff] text-7xl text-left max-w-2xl font-semibold leading-18">
+          <h1 className="text-[#ffffff] text-7xl text-center lg:max-w-2xl font-semibold leading-18">
             Your Next-Gen App
           </h1>
-          <p className="text-[#ffffff] text-2xl font-semibold leading-7 max-w-3xl">
-            Money extends beyond borders and that’s where Jeton comes in. An all-in-one payment app & web app that opens doors to world full of opportunities. With the Jeton App, you can access many features that simplify and improve your every day financial experience, no matter where you are.
+          <p className="text-[#ffffff] lg:text-2xl text-xl text-center font-semibold leading-7 max-w-3xl">
+            Money extends beyond borders and that’s where Jeton comes in. An
+            all-in-one payment app & web app that opens doors to world full of
+            opportunities. With the Jeton App, you can access many features that
+            simplify and improve your every day financial experience, no matter
+            where you are.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start">
@@ -169,7 +185,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex items-center justify-around pb-20">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-around pb-20">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-white font-bold text-2xl">1M+</h1>
             <p className="text-white font-semibold text-xl">Registered Users</p>
@@ -177,7 +193,9 @@ export default function Page() {
 
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-white font-bold text-2xl">27</h1>
-            <p className="text-white font-semibold text-xl">Available Countries</p>
+            <p className="text-white font-semibold text-xl">
+              Available Countries
+            </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
@@ -186,14 +204,37 @@ export default function Page() {
           </div>
         </div>
       </section>
+      
+      <Financial />
+      <Awards />
+
+      {/* Job Openings */}
+      <div className="bg-[#f73b20] ml-10 mr-10 mt-20 rounded-4xl text-white p-20 flex flex-col gap-10 justify-center items-center">
+        <p className="text-[#ffffff] border border-[#ffffff] px-2 py-1 rounded-full inline-flex">
+          Careers
+        </p>
+        <h1 className="lg:text-7xl text-2xl font-semibold text-center">
+          Job openings
+        </h1>
+        <p className="lg:text-xl text-lg font-semibold lg:max-w-xl text-center">
+          Thanks for your interest in Jeton! There are no open roles at this
+          time — but feel free to send your spontaneous application below!
+        </p>
+        <Button
+          text="Spntaneous Application"
+          fromColor="from-white"
+          toColor="to-white"
+          textColor="text-[#f73b20]"
+          border="border border-white"
+        />
+      </div>
 
       <div>
-        {/* <ParallaxScroll /> */}
         <main
           className={`min-h-screen flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300`}
         >
           {/* Hero Content */}
-          <div className="text-center max-w-6xl">
+          <div className="text-center max-w-6xl text-[#f73b20]">
             <h1
               className={`text-6xl md:text-[10rem] font-bold leading-36 mb-6 transition-colors duration-300`}
             >
@@ -211,7 +252,7 @@ export default function Page() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
               <Link
                 href=""
-                className="border border-[#ffffff] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#ffffff]"
+                className="border border-[#f73b20] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#f73b20]"
               >
                 <FaApple className="h-8 w-8" />
                 <span>
@@ -223,7 +264,7 @@ export default function Page() {
               {/* GOOGLE PLAY */}
               <Link
                 href=""
-                className="border border-[#ffffff] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#ffffff]"
+                className="border border-[#f73b20] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#f73b20]"
               >
                 <FaGooglePlay className="h-6 w-6" />
                 <span>
