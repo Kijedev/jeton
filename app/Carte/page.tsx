@@ -9,6 +9,7 @@ import { CgScrollV } from "react-icons/cg";
 import Button from "@/app/components/ui/Button/page";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import Support from "../components/Support";
+import { motion } from "framer-motion";
 
 export default function Page() {
   return (
@@ -140,15 +141,27 @@ export default function Page() {
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Jeton Card
           </p>
-          <h1 className="text-[#f73b20] lg:text-7xl text-5xl text-left max-w-2xl font-semibold lg:leading-18">
+          <motion.h1
+            className="text-[#f73b20] lg:text-7xl text-5xl text-left max-w-2xl font-semibold lg:leading-18"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Jeton Card, all <br /> your spendings <br /> under control.
-          </h1>
-          <p className="text-[#f73b20] lg:text-2xl text-xl font-semibold leading-7">
+          </motion.h1>
+          <motion.p
+            className="text-[#f73b20] lg:text-2xl text-xl font-semibold leading-7"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Safely shop online, buy in stores, or tap into the power of <br />{" "}
             virtual cards with Jeton. Freeze and unfreeze your card <br />{" "}
             anytime within the Jeton app, and enjoy better payments <br />{" "}
             today.
-          </p>
+          </motion.p>
         </div>
 
         <div className="lg:h-screen">
@@ -169,14 +182,26 @@ export default function Page() {
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Wallets
           </p>
-          <h1 className="text-[#f73b20] lg:text-7xl text-5xl text-left max-w-2xl font-semibold leading-18">
+          <motion.h1
+            className="text-[#f73b20] lg:text-7xl text-5xl text-left max-w-2xl font-semibold leading-18"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Pay-on-the-go
-          </h1>
-          <p className="text-[#f73b20] lg:text-2xl font-semibold lg:leading-7 leading-5">
+          </motion.h1>
+          <motion.p
+            className="text-[#f73b20] lg:text-2xl font-semibold lg:leading-7 leading-5"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Make contactless payments in stores with Jeton <br /> Card. Easily
             link your card with your digital wallet. <br /> Tap, pay and speed
             through checkouts!
-          </p>
+          </motion.p>
         </div>
 
         <div className="lg:h-screen">
@@ -193,10 +218,16 @@ export default function Page() {
       <section className="relative bg-white md:px-16 py-20 overflow-hidden">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 px-3">
           <div>
-            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold lg:leading-14 max-w-4xl">
+            <motion.h1
+              className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold lg:leading-14 max-w-4xl"
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.6 }}
+            >
               Faster, smoother payments: Jeton Card integrates Apple Pay and
               Google Pay
-            </h1>
+            </motion.h1>
 
             <div className="flex items-center gap-8 mt-10 text-[#ff3b1f] font-semibold text-xl">
               <span className="flex">
@@ -209,7 +240,13 @@ export default function Page() {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="flex flex-col gap-6 text-[#ff3b1f] max-w-lg">
+          <motion.div
+            className="flex flex-col gap-6 text-[#ff3b1f] max-w-lg"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             <p>
               By integrating with Apple Pay and Google Pay, Jeton users can now
               enjoy a quicker and more straightforward payment process. With
@@ -231,11 +268,17 @@ export default function Page() {
               textColor="text-[#ff3b1f]"
               border="border border-white"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* BOTTOM IMAGE */}
-        <div className="relative float-right mt-20 w-full lg:w-[45%] h-75 md:h-105">
+        <motion.div
+          className="relative float-right mt-20 w-full lg:w-[45%] h-75 md:h-105"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.6 }}
+        >
           <Image
             src="/Image/payonthego.png"
             alt="Contactless payment"
@@ -243,14 +286,17 @@ export default function Page() {
             className="object-cover"
             priority
           />
-        </div>
+        </motion.div>
       </section>
 
-      <div className="pt-10 pb-20">
+      <motion.div className="pt-10 pb-20" initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.6 }} >
         <h1 className="text-[#ff3b1f] text-3xl md:text-5xl font-semibold leading-tight max-w-4xl float-right lg:mr-20">
           Paying made effortless with <br /> the devices you carry daily
         </h1>
-      </div>
+      </motion.div>
 
       <section className="max-w-8xl mx-auto px-6 md:px-16 py-20 text-[#ff3b1f]">
         {/* SMART PHONE */}

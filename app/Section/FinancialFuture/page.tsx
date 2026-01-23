@@ -1,4 +1,6 @@
 // app/components/InclusiveFutureSection.jsx
+import { motion } from "framer-motion";
+
 export default function InclusiveFutureSection() {
   return (
     <section className="flex flex-col bg-[#ff3b1f] text-white px-6 md:px-16 py-16">
@@ -9,16 +11,28 @@ export default function InclusiveFutureSection() {
             Awards & Certifications
           </span>
         </div>
-        <h1 className="font-semibold lg:leading-18 text-4xl md:text-6xl lg:text-7xl max-w-3xl">
+        <motion.h1
+          className="font-semibold lg:leading-18 text-4xl md:text-6xl lg:text-7xl max-w-3xl"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.6 }}
+        >
           Working for <br />
           an all inclusive <br />
           financial future
-        </h1>
+        </motion.h1>
       </div>
 
       {/* Content rows */}
       <div className="lg:mt-96 mt-10 space-y-20">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.6 }}
+        >
           <span className="md:col-span-1 text-xl opacity-80">01.</span>
           <h2 className="md:col-span-4 text-4xl md:text-5xl font-semibold">
             For you
@@ -28,12 +42,18 @@ export default function InclusiveFutureSection() {
             product that seamlessly fits into your life, simplifying your
             finances and make money better for you.
           </p>
-        </div>
+        </motion.div>
 
         <div className="h-px bg-white/30" />
 
         {/* Row 02 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start opacity-70">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start opacity-70"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.6 }}
+        >
           <span className="md:col-span-1 text-xl">02.</span>
           <h2 className="md:col-span-4 text-4xl md:text-5xl font-semibold">
             Accessible
@@ -43,11 +63,17 @@ export default function InclusiveFutureSection() {
             commitment is to ensure that our services are easy to use and
             available to all.
           </p>
-        </div>
+        </motion.div>
 
         <div className="h-px bg-white/30" />
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.6 }}
+        >
           <span className="md:col-span-1 text-xl opacity-80">03.</span>
           <h2 className="md:col-span-4 text-4xl md:text-5xl font-semibold">
             Transparent
@@ -59,10 +85,16 @@ export default function InclusiveFutureSection() {
             transparent. With Jeton, there are no hidden fees or surprises. What
             you see is truly what you get.
           </p>
-        </div>
+        </motion.div>
       </div>
 
-      <section className="px-6 md:px-16 py-20">
+      <motion.section
+        className="px-6 md:px-16 py-20"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.6 }}
+      >
         <div className="max-w-6xl mx-auto">
           <div className="bg-[#ff4a32] rounded-3xl p-8 md:p-14 text-white">
             {/* Quote */}
@@ -91,7 +123,7 @@ export default function InclusiveFutureSection() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </section>
   );
 }

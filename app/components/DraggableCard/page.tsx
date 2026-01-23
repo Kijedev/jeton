@@ -4,6 +4,7 @@ import {
   DraggableCardContainer,
 } from "@/app/components/DraggableCard/DraggableCard";
 import CurrencyConverter from "../CurrenciesConversion/currency-converter";
+import { motion } from "framer-motion";
 
 export default function page() {
   const items = [
@@ -115,14 +116,26 @@ export default function page() {
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full">
             Exchange
           </p>
-          <h1 className="text-[#f73b20] lg:text-7xl text-4xl text-center max-w-2xl font-semibold lg:leading-16 leading-10">
+          <motion.h1
+            className="text-[#f73b20] lg:text-7xl text-4xl text-center max-w-2xl font-semibold lg:leading-16 leading-10"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Convert fiat <br /> cash easily.
-          </h1>
-          <p className="text-[#f73b20]/50 text-center text-sm">
+          </motion.h1>
+          <motion.p
+            className="text-[#f73b20]/50 text-center text-sm"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             *The displayed conversion rates and fees may vary during <br />
             the currency exchange process, and the rates shown were <br /> last
             updated on 00:59 updated on 02:01:2026
-          </p>
+          </motion.p>
         </div>
 
         <div>

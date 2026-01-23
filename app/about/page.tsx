@@ -86,14 +86,26 @@ export default function Page() {
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Mission
           </p>
-          <h1 className="text-[#f73b20] lg:text-7xl text-4xl text-left max-w-2xl font-semibold leading-18">
+          <motion.h1
+            className="text-[#f73b20] lg:text-7xl text-4xl text-left max-w-2xl font-semibold leading-18"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Money, but better.
-          </h1>
-          <p className="text-[#f73b20] lg:text-2xl font-semibold lg:leading-7 leading-5">
+          </motion.h1>
+          <motion.p
+            className="text-[#f73b20] lg:text-2xl font-semibold lg:leading-7 leading-5"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Our goal is to make money better. Whether you’re <br /> opening an
             account with us, sending or receiving <br /> money, we make it
             better for you.
-          </p>
+          </motion.p>
         </div>
 
         <div className="lg:h-screen">
@@ -109,25 +121,42 @@ export default function Page() {
 
       <section className="relative bg-white px-6 md:px-16 py-20 overflow-hidden">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             <h1 className="text-[#ff3b1f] text-2xl md:text-5xl font-semibold lg:leading-14 leading-7 max-w-4xl">
               We love to make things <br /> easier for everyone.
             </h1>
-          </div>
+          </motion.div>
 
           {/* RIGHT CONTENT */}
-          <div className="flex flex-col gap-6 text-[#ff3b1f] max-w-lg lg:mt-0 -mt-12">
+          <motion.div
+            className="flex flex-col gap-6 text-[#ff3b1f] max-w-lg lg:mt-0 -mt-12"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             <p>
               No hidden fees, complicated words or complex processes. We make{" "}
               <br /> money relatable, effortless, easy to understand and manage.
               Our goal <br /> for each of our users to manage their money with a
               few taps.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         {/* BOTTOM IMAGE */}
-        <div className="relative float-right lg:mr-48 lg:mt-32 mt-10 w-full lg:w-[35%] h-75 md:h-96">
+        <motion.div
+          className="relative float-right lg:mr-48 lg:mt-32 mt-10 w-full lg:w-[35%] h-75 md:h-96"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.6 }}
+        >
           <Image
             src="/Image/payonthego.png"
             alt="Contactless payment"
@@ -135,7 +164,7 @@ export default function Page() {
             className="object-cover"
             priority
           />
-        </div>
+        </motion.div>
       </section>
 
       <section className="bg-[#f73b20]">
@@ -150,16 +179,28 @@ export default function Page() {
           <p className="text-[#ffffff] border border-[#ffffff] px-2 py-1 rounded-full inline-flex">
             Product
           </p>
-          <h1 className="text-[#ffffff] lg:text-7xl text-4xl text-center lg:max-w-2xl font-semibold leading-18">
+          <motion.h1
+            className="text-[#ffffff] lg:text-7xl text-4xl text-center lg:max-w-2xl font-semibold leading-18"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Your Next-Gen App
-          </h1>
-          <p className="text-[#ffffff] lg:text-2xl text-lg lg:mt-0 -mt-4 text-center font-semibold leading-7 max-w-3xl">
+          </motion.h1>
+          <motion.p
+            className="text-[#ffffff] lg:text-2xl text-lg lg:mt-0 -mt-4 text-center font-semibold leading-7 max-w-3xl"
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
+          >
             Money extends beyond borders and that’s where Jeton comes in. An
             all-in-one payment app & web app that opens doors to world full of
             opportunities. With the Jeton App, you can access many features that
             simplify and improve your every day financial experience, no matter
             where you are.
-          </p>
+          </motion.p>
 
           <div className="flex gap-4 mt-6 justify-center lg:justify-start">
             <Link
@@ -210,7 +251,13 @@ export default function Page() {
       <Awards />
 
       {/* Job Openings */}
-      <div className="bg-[#f73b20] ml-10 mr-10 mt-20 rounded-4xl text-white lg:p-20 p-8 flex flex-col gap-10 justify-center items-center">
+      <motion.div
+        className="bg-[#f73b20] ml-10 mr-10 mt-20 rounded-4xl text-white lg:p-20 p-8 flex flex-col gap-10 justify-center items-center"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.6 }}
+      >
         <p className="text-[#ffffff] border border-[#ffffff] px-2 py-1 rounded-full inline-flex">
           Careers
         </p>
@@ -228,20 +275,24 @@ export default function Page() {
           textColor="text-[#f73b20]"
           border="border border-white"
         />
-      </div>
+      </motion.div>
 
       <main
         className={`min-h-screen flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300`}
       >
         {/* Hero Content */}
         <div className="text-center max-w-6xl">
-          <h1
+          <motion.h1
             className={`text-5xl md:text-[10rem] font-bold lg:leading-36 mb-6 transition-colors duration-300 text-[#f73b20]`}
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.6 }}
           >
             1 million users,
             <br />
             plus you.
-          </h1>
+          </motion.h1>
 
           <p
             className={`text-xl md:text-2xl mb-12 transition-colors duration-300 text-[#f73b20]`}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import Link from "next/link";
 import Button from "@/app/components/ui/Button/page";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -24,11 +25,17 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left Content */}
           <div className="text-white space-y-6">
-            <h1 className="text-4xl md:text-7xl font-semibold lg:leading-18 leading-8">
+            <motion.h1
+              className="text-4xl md:text-7xl font-semibold lg:leading-18 leading-8"
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.6 }}
+            >
               All your finances,
               <br />
               in one app.
-            </h1>
+            </motion.h1>
 
             <p className="text-lg text-white">Join 1M+ happy users today.</p>
 

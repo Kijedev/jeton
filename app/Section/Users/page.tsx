@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { Apple, Play } from "lucide-react";
 import Link from "next/link";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [isInView, setIsInView] = useState(false);
@@ -37,15 +38,19 @@ export default function Home() {
     >
       {/* Hero Content */}
       <div className="text-center max-w-6xl">
-        <h1
+        <motion.h1
           className={`text-5xl md:text-[10rem] font-bold lg:leading-36 mb-6 transition-colors duration-300 ${
             isInView ? "text-white" : "text-[#f73b20]"
           }`}
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.6 }}
         >
           1 million users,
           <br />
           plus you.
-        </h1>
+        </motion.h1>
 
         <p
           className={`text-xl md:text-2xl mb-12 transition-colors duration-300 ${

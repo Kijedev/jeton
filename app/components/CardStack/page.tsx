@@ -1,6 +1,7 @@
 "use client";
 import { CardStack } from "@/app/components/CardStack/cardstack";
 import { cn } from "@/app/lib/utils";
+import { motion } from "framer-motion";
 
 export function page() {
   return (
@@ -12,7 +13,15 @@ export function page() {
         backgroundPosition: "center",
       }}
     >
-      <h1 className="text-white font-bold lg:text-8xl text-4xl text-center">Hear it from our clients</h1>
+      <motion.h1
+        className="text-white font-bold lg:text-8xl text-4xl text-center"
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.6 }}
+      >
+        Hear it from our clients
+      </motion.h1>
       <CardStack items={CARDS} />
     </div>
   );
@@ -74,7 +83,7 @@ const CARDS = [
           The best payment solution for German customers
         </h1>
         <p>
-          I've been a Jeton user for a few years! The support was always great
+          I've been a Jeton user for a few years!The support was always great
           and I'm always able to make my payments to the websites I want with no
           problem.
         </p>

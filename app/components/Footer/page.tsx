@@ -149,7 +149,7 @@ export default function page() {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between pb-20">
           {/* Language Selector */}
           <div className="flex items-center gap-2 text-orange-600 cursor-pointer hover:text-orange-700 transition-colors mb-4 md:mb-0">
             <Globe className="w-5 h-5" />
