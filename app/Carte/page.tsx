@@ -28,11 +28,11 @@ export default function Page() {
           <Navbar />
 
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-32 lg:mt-80 gap-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-semibold text-center lg:text-left">
+            <h1 className="text-5xl md:text-6xl lg:text-[7rem] font-semibold text-left lg:text-left">
               Ready to use <br className="hidden lg:block" /> right away
             </h1>
 
-            <div className="text-center lg:text-left lg:pr-20">
+            <div className="text-center lg:text-left lg:pr-20 lg:relative absolute bottom-10">
               <p className="text-lg sm:text-xl lg:text-2xl font-semibold">
                 No hidden fees, no surprises
               </p>
@@ -70,7 +70,7 @@ export default function Page() {
       <section id="uniquely-yours" className="relative bg-white">
         {/* STICKY BACKGROUND */}
         <div className="sticky top-0 h-screen w-full flex flex-col gap-10 items-center justify-center pointer-events-none">
-          <h1 className="text-[#f73b20] text-[1rem] md:text-[1rem] lg:text-[5rem] font-semibold text-center leading-none">
+          <h1 className="text-[#f73b20] text-[3rem] lg:text-[5rem] font-semibold text-center leading-none">
             Uniquely Yours
           </h1>
           <Button
@@ -135,14 +135,14 @@ export default function Page() {
       </section>
 
       <div className="bg-white mt-20">
-        <div className="lg:px-32 pt-48 space-y-8 pb-20">
+        <div className="lg:px-32 pt-48 lg:space-y-8 space-y-4 pb-20 px-3">
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Jeton Card
           </p>
-          <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-semibold leading-18">
+          <h1 className="text-[#f73b20] lg:text-7xl text-5xl text-left max-w-2xl font-semibold lg:leading-18">
             Jeton Card, all <br /> your spendings <br /> under control.
           </h1>
-          <p className="text-[#f73b20] text-2xl font-semibold leading-7">
+          <p className="text-[#f73b20] lg:text-2xl text-xl font-semibold leading-7">
             Safely shop online, buy in stores, or tap into the power of <br />{" "}
             virtual cards with Jeton. Freeze and unfreeze your card <br />{" "}
             anytime within the Jeton app, and enjoy better payments <br />{" "}
@@ -150,7 +150,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="h-screen">
+        <div className="lg:h-screen">
           <video
             autoPlay
             loop
@@ -164,35 +164,35 @@ export default function Page() {
       </div>
 
       <div className="bg-white mt-0">
-        <div className="lg:px-12 pt-48 space-y-8 pb-20">
+        <div className="lg:px-12 pt-48 lg:space-y-8 space-y-4 pb-20 px-3">
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Wallets
           </p>
-          <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-semibold leading-18">
+          <h1 className="text-[#f73b20] lg:text-7xl text-5xl text-left max-w-2xl font-semibold leading-18">
             Pay-on-the-go
           </h1>
-          <p className="text-[#f73b20] text-2xl font-semibold leading-7">
+          <p className="text-[#f73b20] lg:text-2xl font-semibold lg:leading-7 leading-5">
             Make contactless payments in stores with Jeton <br /> Card. Easily
             link your card with your digital wallet. <br /> Tap, pay and speed
             through checkouts!
           </p>
         </div>
 
-        <div className="h-screen">
+        <div className="lg:h-screen">
           <Image
             src="/Image/payonthego.png"
             alt="Pay on the go"
             width={500}
             height={500}
-            className="w-full h-full object-cover"
+            className="lg:w-full w-full h-80 lg:h-full object-cover"
           />
         </div>
       </div>
 
-      <section className="relative bg-white px-6 md:px-16 py-20 overflow-hidden">
-        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section className="relative bg-white md:px-16 py-20 overflow-hidden">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 px-3">
           <div>
-            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold leading-14 max-w-4xl">
+            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold lg:leading-14 max-w-4xl">
               Faster, smoother payments: Jeton Card integrates Apple Pay and
               Google Pay
             </h1>
@@ -246,7 +246,7 @@ export default function Page() {
       </section>
 
       <div className="pt-10 pb-20">
-        <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold leading-tight max-w-4xl float-right mr-20">
+        <h1 className="text-[#ff3b1f] text-3xl md:text-5xl font-semibold leading-tight max-w-4xl float-right lg:mr-20">
           Paying made effortless with <br /> the devices you carry daily
         </h1>
       </div>

@@ -75,7 +75,7 @@ export default function page() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Links Section */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16 pb-16 border-b border-gray-100">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16 pb-16 border-b border-gray-100">
           {footerColumns.map((column) => (
             <div key={column.title}>
               <h3 className="text-lg font-semibold text-[#f73b20]/40 mb-4">
@@ -98,7 +98,7 @@ export default function page() {
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-16 pb-16 border-b border-gray-100 gap-8">
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-6">
+          <div className="flex justify-center lg:justify-start gap-4 mt-6">
             <Link
               href=""
               className="border border-[#f73b20] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#f73b20]"

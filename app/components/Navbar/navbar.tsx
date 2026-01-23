@@ -1,6 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import type { Metadata } from "next";
 import Button from "@/app/components/ui/Button/page";
 import Link from "next/link";
+import { HiMenu, HiX } from "react-icons/hi";
 
 export const metadata: Metadata = {
   title: "",
@@ -8,9 +12,11 @@ export const metadata: Metadata = {
 };
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <main>
-      <nav className="flex items-center justify-between px-4 mt-10 lg:px-5">
+    <nav className="w-full px-4 sm:px-6 lg:px-10 py-6">
+      <div className="flex items-center justify-between">
         {/* LOGO */}
         <Link
           href="/"
@@ -19,8 +25,8 @@ export default function Navbar() {
           Jeton
         </Link>
 
-        {/* ACTIONS */}
-        <div className="flex items-center gap-2 sm:gap-4 lg:gap-10">
+        {/* DESKTOP ACTIONS */}
+        <div className="hidden md:flex items-center gap-4 lg:gap-10">
           <Button
             text="EN"
             fromColor="from-transparent"
@@ -45,7 +51,28 @@ export default function Navbar() {
             border="border border-white"
           />
         </div>
-      </nav>
-    </main>
+
+        {/* MOBILE MENU BUTTON */}
+        <button
+          className="md:hidden text-white text-3xl"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <HiX /> : <HiMenu />}
+        </button>
+      </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="md:hidden mt-6 flex flex-col gap-4">
+          <Button
+            text="Log in"
+            fromColor="from-transparent"
+            toColor="to-transparent"
+            textColor="text-white"
+            border="border border-white"
+          />
+        </div>
+      )}
+    </nav>
   );
 }

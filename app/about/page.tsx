@@ -41,12 +41,12 @@ export default function Page() {
           <Navbar />
 
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-32 lg:mt-80 gap-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-semibold text-center lg:text-left">
+            <h1 className="text-5xl md:text-6xl lg:text-[7rem] font-semibold text-left lg:text-left">
               Your money, <br className="hidden lg:block" /> Your way.
             </h1>
 
-            <div className="text-center lg:text-left lg:pr-20">
-              <p className="text-lg sm:text-xl lg:text-2xl font-semibold pb-10">
+            <div className="text-center lg:text-left lg:pr-20 lg:relative absolute bottom-10">
+              <p className="text-lg sm:text-xl lg:text-2xl text-left font-semibold pb-10">
                 Make finance accessible, easy, <br /> friendly, and fun.
               </p>
 
@@ -81,27 +81,27 @@ export default function Page() {
       <BottomNavbar />
 
       <div className="bg-white mt-0">
-        <div className="lg:px-32 pt-48 space-y-8 pb-20">
+        <div className="lg:px-32 px-2 pt-48 lg:space-y-8 pb-20">
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full inline-flex">
             Mission
           </p>
-          <h1 className="text-[#f73b20] text-7xl text-left max-w-2xl font-semibold leading-18">
+          <h1 className="text-[#f73b20] lg:text-7xl text-4xl text-left max-w-2xl font-semibold leading-18">
             Money, but better.
           </h1>
-          <p className="text-[#f73b20] text-2xl font-semibold leading-7">
+          <p className="text-[#f73b20] lg:text-2xl font-semibold lg:leading-7 leading-5">
             Our goal is to make money better. Whether you’re <br /> opening an
             account with us, sending or receiving <br /> money, we make it
             better for you.
           </p>
         </div>
 
-        <div className="h-screen">
+        <div className="lg:h-screen">
           <Image
             src="/Image/payonthego.png"
             alt="Pay on the go"
             width={500}
             height={500}
-            className="w-full h-full object-cover"
+            className="lg:w-full w-full lg:h-full h-56 object-cover"
           />
         </div>
       </div>
@@ -109,13 +109,13 @@ export default function Page() {
       <section className="relative bg-white px-6 md:px-16 py-20 overflow-hidden">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <h1 className="text-[#ff3b1f] text-4xl md:text-5xl font-semibold leading-14 max-w-4xl">
+            <h1 className="text-[#ff3b1f] text-2xl md:text-5xl font-semibold lg:leading-14 leading-7 max-w-4xl">
               We love to make things <br /> easier for everyone.
             </h1>
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="flex flex-col gap-6 text-[#ff3b1f] max-w-lg">
+          <div className="flex flex-col gap-6 text-[#ff3b1f] max-w-lg lg:mt-0 -mt-12">
             <p>
               No hidden fees, complicated words or complex processes. We make{" "}
               <br /> money relatable, effortless, easy to understand and manage.
@@ -126,7 +126,7 @@ export default function Page() {
         </div>
 
         {/* BOTTOM IMAGE */}
-        <div className="relative float-right lg:mr-48 lg:mt-32 w-full lg:w-[35%] h-75 md:h-96">
+        <div className="relative float-right lg:mr-48 lg:mt-32 mt-10 w-full lg:w-[35%] h-75 md:h-96">
           <Image
             src="/Image/payonthego.png"
             alt="Contactless payment"
@@ -149,10 +149,10 @@ export default function Page() {
           <p className="text-[#ffffff] border border-[#ffffff] px-2 py-1 rounded-full inline-flex">
             Product
           </p>
-          <h1 className="text-[#ffffff] text-7xl text-center lg:max-w-2xl font-semibold leading-18">
+          <h1 className="text-[#ffffff] lg:text-7xl text-4xl text-center lg:max-w-2xl font-semibold leading-18">
             Your Next-Gen App
           </h1>
-          <p className="text-[#ffffff] lg:text-2xl text-xl text-center font-semibold leading-7 max-w-3xl">
+          <p className="text-[#ffffff] lg:text-2xl text-lg lg:mt-0 -mt-4 text-center font-semibold leading-7 max-w-3xl">
             Money extends beyond borders and that’s where Jeton comes in. An
             all-in-one payment app & web app that opens doors to world full of
             opportunities. With the Jeton App, you can access many features that
@@ -160,7 +160,7 @@ export default function Page() {
             where you are.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start">
+          <div className="flex gap-4 mt-6 justify-center lg:justify-start">
             <Link
               href=""
               className="border border-white text-white rounded-xl px-3 py-1 flex gap-2 items-center justify-center"
@@ -185,31 +185,31 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-around pb-20">
-          <div className="flex flex-col items-center justify-center">
+        <div className="grid lg:grid-cols-3 grid-cols-2 px-3 lg:px-0 gap-10 lg:gap-0 items-center justify-around pb-20">
+          <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-white font-bold text-2xl">1M+</h1>
-            <p className="text-white font-semibold text-xl">Registered Users</p>
+            <p className="text-white font-semibold text-sm">Registered Users</p>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-white font-bold text-2xl">27</h1>
-            <p className="text-white font-semibold text-xl">
+            <p className="text-white font-semibold text-sm">
               Available Countries
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-white font-bold text-2xl">50+</h1>
-            <p className="text-white font-semibold text-xl">Payment Methods</p>
+            <p className="text-white font-semibold text-sm">Payment Methods</p>
           </div>
         </div>
       </section>
-      
+
       <Financial />
       <Awards />
 
       {/* Job Openings */}
-      <div className="bg-[#f73b20] ml-10 mr-10 mt-20 rounded-4xl text-white p-20 flex flex-col gap-10 justify-center items-center">
+      <div className="bg-[#f73b20] ml-10 mr-10 mt-20 rounded-4xl text-white lg:p-20 p-8 flex flex-col gap-10 justify-center items-center">
         <p className="text-[#ffffff] border border-[#ffffff] px-2 py-1 rounded-full inline-flex">
           Careers
         </p>
@@ -229,53 +229,51 @@ export default function Page() {
         />
       </div>
 
-      <div>
-        <main
-          className={`min-h-screen flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300`}
-        >
-          {/* Hero Content */}
-          <div className="text-center max-w-6xl text-[#f73b20]">
-            <h1
-              className={`text-6xl md:text-[10rem] font-bold leading-36 mb-6 transition-colors duration-300`}
+      <main
+        className={`min-h-screen flex flex-col items-center justify-center px-4 py-20 transition-colors duration-300`}
+      >
+        {/* Hero Content */}
+        <div className="text-center max-w-6xl">
+          <h1
+            className={`text-5xl md:text-[10rem] font-bold lg:leading-36 mb-6 transition-colors duration-300 text-[#f73b20]`}
+          >
+            1 million users,
+            <br />
+            plus you.
+          </h1>
+
+          <p
+            className={`text-xl md:text-2xl mb-12 transition-colors duration-300 text-[#f73b20]`}
+          >
+            It only takes few seconds to get started.
+          </p>
+
+          <div className="flex justify-center gap-4 mt-6">
+            <Link
+              href=""
+              className="border border-[#f73b20] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#f73b20]"
             >
-              1 million users,
-              <br />
-              plus you.
-            </h1>
+              <FaApple className="h-8 w-8" />
+              <span>
+                <p className="text-[10px]">Download on</p>
+                <h1 className="text-lg -mt-1">App Store</h1>
+              </span>
+            </Link>
 
-            <p
-              className={`text-xl md:text-2xl mb-12 transition-colors duration-300`}
+            {/* GOOGLE PLAY */}
+            <Link
+              href=""
+              className="border border-[#f73b20] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#f73b20]"
             >
-              It only takes few seconds to get started.
-            </p>
-
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-              <Link
-                href=""
-                className="border border-[#f73b20] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#f73b20]"
-              >
-                <FaApple className="h-8 w-8" />
-                <span>
-                  <p className="text-[10px]">Download on</p>
-                  <h1 className="text-lg -mt-1">App Store</h1>
-                </span>
-              </Link>
-
-              {/* GOOGLE PLAY */}
-              <Link
-                href=""
-                className="border border-[#f73b20] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#f73b20]"
-              >
-                <FaGooglePlay className="h-6 w-6" />
-                <span>
-                  <p className="text-[10px]">Get it on</p>
-                  <h1 className="text-lg -mt-1">Google Play</h1>
-                </span>
-              </Link>
-            </div>
+              <FaGooglePlay className="h-6 w-6" />
+              <span>
+                <p className="text-[10px]">Get it on</p>
+                <h1 className="text-lg -mt-1">Google Play</h1>
+              </span>
+            </Link>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
 
       <Footer />
     </div>

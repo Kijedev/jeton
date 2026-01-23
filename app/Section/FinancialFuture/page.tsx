@@ -66,7 +66,7 @@ export default function InclusiveFutureSection() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-[#ff4a32] rounded-3xl p-8 md:p-14 text-white">
             {/* Quote */}
-            <p className="text-lg md:text-xl leading-relaxed opacity-60">
+            <p className="text-lg md:text-xl leading-relaxed opacity-80">
               “We observed how difficult it was for people to manage their
               finances. Even the simplest tasks took too long or became
               extremely intricate. The fact that today’s financial system was
