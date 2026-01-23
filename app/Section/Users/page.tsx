@@ -38,7 +38,7 @@ export default function Home() {
       {/* Hero Content */}
       <div className="text-center max-w-6xl">
         <h1
-          className={`text-6xl md:text-[10rem] font-bold leading-36 mb-6 transition-colors duration-300 ${
+          className={`text-5xl md:text-[10rem] font-bold lg:leading-36 mb-6 transition-colors duration-300 ${
             isInView ? "text-white" : "text-[#f73b20]"
           }`}
         >
@@ -55,7 +55,7 @@ export default function Home() {
           It only takes few seconds to get started.
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+        <div className="flex justify-center gap-4 mt-6">
           <Link
             href=""
             className="border border-[#ffffff] rounded-xl px-3 py-1 flex gap-2 items-center justify-center text-[#ffffff]"

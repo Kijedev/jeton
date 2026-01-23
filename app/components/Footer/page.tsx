@@ -71,7 +71,7 @@ const footerColumns: FooterColumn[] = [
 
 export default function page() {
   return (
-    <footer className="bg-white border-t border-gray-100 mt-48">
+    <footer className="bg-white border-t border-gray-100 lg:mt-10">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Links Section */}

@@ -46,17 +46,17 @@ export default function Page() {
           <Navbar />
 
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-32 lg:mt-80 gap-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[7rem] font-semibold text-center lg:text-left">
+            <h1 className="text-6xl md:text-6xl lg:text-[7rem] font-semibold text-left lg:text-left">
               One app <br className="hidden lg:block" /> for all needs
             </h1>
 
-            <div className="text-center lg:text-left lg:pr-20">
+            <div className="text-center lg:text-left lg:pr-20 lg:relative absolute bottom-10">
               <p className="text-lg sm:text-xl lg:text-2xl font-semibold">
                 Single account for all your <br className="hidden lg:block" />
                 payments.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start">
+              <div className="flex gap-4 mt-6 justify-center lg:justify-start">
                 <Link
                   href=""
                   className="border border-white rounded-xl px-3 py-1 flex gap-2 items-center justify-center"
@@ -89,8 +89,8 @@ export default function Page() {
                 .getElementById("finances")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="absolute -bottom-28 left-1/2 lg:left-10 
-            -translate-x-1/2 lg:translate-x-0 inline-flex items-center gap-1 
+            className="absolute bottom-10 left-12 hidden
+            -translate-x-1/2 lg:translate-x-0 lg:inline-flex items-center gap-1 
             bg-white/20 hover:bg-white/30 cursor-pointer text-white 
             rounded-full px-3 py-2"
           >

@@ -12,7 +12,7 @@ export function page() {
         backgroundPosition: "center",
       }}
     >
-      <h1 className="text-white font-bold lg:text-8xl text-center">Hear it from our clients</h1>
+      <h1 className="text-white font-bold lg:text-8xl text-4xl text-center">Hear it from our clients</h1>
       <CardStack items={CARDS} />
     </div>
   );

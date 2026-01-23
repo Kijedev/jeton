@@ -7,7 +7,7 @@ const text = "Jeton";
 export default function AnimatedTitle() {
   return (
     <motion.h1
-      className="text-[#f73b20] lg:text-[28rem] text-[8rem] lg:mt-0 -mt-32 font-bold flex"
+      className="text-[#f73b20] lg:text-[28rem] md:text-[18rem] text-[7rem] lg:mt-0 -mt-32 font-bold flex"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.6 }}

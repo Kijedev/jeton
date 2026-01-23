@@ -115,7 +115,7 @@ export default function page() {
           <p className="text-[#f73b20] border border-[#f73b20] px-2 py-1 rounded-full">
             Exchange
           </p>
-          <h1 className="text-[#f73b20] text-7xl text-center max-w-2xl font-semibold leading-16">
+          <h1 className="text-[#f73b20] lg:text-7xl text-4xl text-center max-w-2xl font-semibold lg:leading-16 leading-10">
             Convert fiat <br /> cash easily.
           </h1>
           <p className="text-[#f73b20]/50 text-center text-sm">

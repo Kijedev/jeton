@@ -24,13 +24,13 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left Content */}
           <div className="text-white space-y-6">
-            <h1 className="text-4xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-7xl font-semibold lg:leading-18 leading-8">
               All your finances,
               <br />
               in one app.
             </h1>
 
-            <p className="text-lg text-white/80">Join 1M+ happy users today.</p>
+            <p className="text-lg text-white">Join 1M+ happy users today.</p>
 
             <Button
               text="Get Started"
@@ -40,7 +40,7 @@ export default function Hero() {
               border="border border-white"
             />
 
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-32">
+            <div className="flex justify-center lg:justify-start gap-4 lg:mt-32 mt-80">
               {/* APP STORE */}
               <Link
                 href=""
