@@ -10,12 +10,13 @@ import Parallax from "../Parallax/page";
 import Account from "../Account/page";
 import Contactless from "../Contactless/page";
 import Users from "../Users/page";
-import DraggableCard from "@/app/components/DraggableCard";
+// import DraggableCard from "@/app/components/DraggableCard";
 import CardStack from "../../components/CardStack/page";
 
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import { CgScrollV } from "react-icons/cg";
 import { motion, Variants } from "framer-motion";
+import Drag from "@/app/components/Drag";
 
 /* ✅ TYPE-SAFE VARIANTS */
 const sectionVariant: Variants = {
@@ -110,7 +111,7 @@ export default function Page() {
         ["parallax", <Parallax />],
         ["account", <Account />],
         ["contactless", <Contactless />],
-        ["cards", <DraggableCard />],
+        ["cards", <Drag />],
         ["stack", <CardStack />],
         ["users", <Users />],
       ].map(([id, Component]) => (

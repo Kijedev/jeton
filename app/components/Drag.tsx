@@ -7,7 +7,7 @@ import DraggableCardBody, {
 import CurrencyConverter from "../components/CurrenciesConversion/currency-converter";
 import { motion } from "framer-motion";
 
-export default function page() {
+export default function Drag() {
   const items = [
     {
       image:
