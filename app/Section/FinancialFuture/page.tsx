@@ -1,4 +1,5 @@
 // app/components/InclusiveFutureSection.jsx
+"use client";
 import { motion } from "framer-motion";
 
 export default function InclusiveFutureSection() {

@@ -1,3 +1,4 @@
+"use client";
 import type { Metadata } from "next";
 import Button from "@/app/components/ui/Button/page";
 import { AnimatePresence, motion } from "framer-motion";

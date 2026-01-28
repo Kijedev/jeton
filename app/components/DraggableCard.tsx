@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/app/lib/utils";
 import React, { useRef, useState, useEffect } from "react";
 import {
@@ -11,7 +12,7 @@ import {
   useAnimationControls,
 } from "motion/react";
 
-export const DraggableCardBody = ({
+const DraggableCardBody = ({
   className,
   children,
 }: {
@@ -186,3 +187,5 @@ export const DraggableCardContainer = ({
     <div className={cn("perspective:[3000px]", className)}>{children}</div>
   );
 };
+
+export default DraggableCardBody

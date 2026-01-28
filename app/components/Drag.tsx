@@ -1,9 +1,10 @@
+"use client";
+
 import React from "react";
-import {
-  DraggableCardBody,
+import DraggableCardBody, {
   DraggableCardContainer,
-} from "@/app/components/DraggableCard/DraggableCard";
-import CurrencyConverter from "../CurrenciesConversion/currency-converter";
+} from "@/app/components/DraggableCard";
+import CurrencyConverter from "../components/CurrenciesConversion/currency-converter";
 import { motion } from "framer-motion";
 
 export default function page() {

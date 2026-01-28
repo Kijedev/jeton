@@ -1,16 +1,10 @@
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   /* config options here */
-// };
-
-// export default nextConfig;
-
-
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
+  output: 'export',
   images: {
-    domains: ["images.unsplash.com"],
+    // domains: ["images.unsplash.com"],
+    unoptimized: true,
   },
 };
 
